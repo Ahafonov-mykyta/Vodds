@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'FONTSPRING DEMO - Gunterz';
+    src: url('FONTSPRINGDEMO-GunterzBlackItalic.eot');
+    src: url('FONTSPRINGDEMO-GunterzBlackItalic.eot?#iefix') format('embedded-opentype'),
+        url('FONTSPRINGDEMO-GunterzBlackItalic.woff2') format('woff2'),
+        url('FONTSPRINGDEMO-GunterzBlackItalic.woff') format('woff'),
+        url('FONTSPRINGDEMO-GunterzBlackItalic.ttf') format('truetype'),
+        url('FONTSPRINGDEMO-GunterzBlackItalic.svg#FONTSPRINGDEMO-GunterzBlackItalic') format('svg');
+    font-weight: 900;
+    font-style: italic;
+    font-display: swap;
+}
+
