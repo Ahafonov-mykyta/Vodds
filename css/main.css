@@ -274,7 +274,7 @@ main {
 
 .steps__item:not(:last-child)::after {
   content: "";
-  background-image: url("/images/triangle.svg");
+  background-image: url("../images/triangle.svg");
   background-repeat: no-repeat;
   background-size: 65%;
   height: 1.3vw;
