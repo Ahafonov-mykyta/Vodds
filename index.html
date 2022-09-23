@@ -94,6 +94,15 @@
               <div class="terms_container">
                 <p class="terms">*Terms & Conditions</p>
               </div>
+              <!-- <div class="gallery">
+                <button class="decrement"><</button>
+                <div id="text_slide1">Содержимое текстового блока №1</div>
+                <div id="text_slide2">Содержимое текстового блока №2</div>
+                <div id="text_slide3">Содержимое текстового блока №3</div>
+                <div id="text_slide4">Содержимое текстового блока №4</div>
+                <div id="text_slide5">Содержимое текстового блока №5</div>
+                <button class="increment">></button>
+              </div> -->
             </div>
           </div>
         </section>
@@ -192,4 +201,57 @@
       </footer>
     </div>
   </body>
+  <script>
+    const leftTable = document.querySelector('.item_left');
+    const btn = document.querySelector('.button');
+    const container = document.querySelector('.button_animation');
+    console.log(leftTable);
+
+    btn.addEventListener('mouseover', function (event) {
+      leftTable.style.opacity = 0;
+    });
+
+    btn.addEventListener('mouseout', function (event) {
+      leftTable.style.opacity = 100;
+    });
+  </script>
+  <script
+    type="text/javascript"
+    src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+  ></script>
+  <script type="text/javascript">
+    var text_slide_cur = 0;
+
+    const increment = document.querySelector('.increment');
+    const decrement = document.querySelector('.decrement');
+
+    increment.addEventListener('click', function showtext_slide() {
+      hidetext_slide();
+      $('#text_slide' + (text_slide_cur + 1))
+        .css({ opacity: 0 })
+        .animate({ opacity: 1.0, left: '50px' }, 500);
+    });
+    function showtext_slide() {
+      $('#text_slide' + (text_slide_cur + 1))
+        .css({ opacity: 0 })
+        .animate({ opacity: 1.0, left: '50px' }, 500);
+    }
+
+    decrement.addEventListener('click', function showtext_slide() {
+      hidetext_slide();
+      $('#text_slide' + (text_slide_cur - 1))
+        .css({ opacity: 0 })
+        .animate({ opacity: 1.0, left: '50px' }, 500);
+    });
+
+    function hidetext_slide() {
+      $('#text_slide' + (text_slide_cur + 1))
+        .css({ opacity: 1 })
+        .animate({ opacity: 0, left: '-50px' }, 500, function () {});
+      text_slide_cur = (text_slide_cur + 1) % 5;
+    }
+    $(document).ready(function () {
+      showtext_slide();
+    });
+  </script>
 </html>

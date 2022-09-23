@@ -319,6 +319,14 @@ main {
   text-transform: uppercase;
   height: 3.33vw;
   color: #79206b;
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+}
+.button:hover {
+  transform: skew(-30deg) translateX(1.3vw);
+  transition: cubic-bezier(0.4, 0, 0.2, 1) 400ms;
+}
+.button:hover + .item_right {
+  opacity: 0;
 }
 @media screen and (max-width: 768px) {
   .button {
@@ -369,6 +377,25 @@ main {
 
 .terms_container {
   width: 100%;
+}
+
+#text_slide1,
+#text_slide2,
+#text_slide3,
+#text_slide4,
+#text_slide5 {
+  position: absolute;
+  left: 100px;
+  opacity: 0;
+}
+
+.gallery {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 50px;
 }
 
 .footer {
