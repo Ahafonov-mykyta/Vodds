@@ -18,6 +18,19 @@ body {
   background-attachment: fixed;
   background-size: 55%;
 }
+@media screen and (max-width: 768px) {
+  body {
+    background: inherit;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  main {
+    background: url("../images/Blocks_mob.svg") no-repeat 0 93.11vw;
+    background-attachment: scroll;
+    background-size: 100%;
+  }
+}
 
 .container {
   width: 100%;
@@ -72,6 +85,7 @@ main {
     height: 100vw;
     top: 23%;
     left: -10%;
+    z-index: 0;
   }
 }
 
@@ -232,7 +246,7 @@ main {
   .description {
     width: 100%;
     font-size: 6.67vw;
-    margin-top: 500px;
+    margin-top: 80vw;
   }
 }
 
@@ -331,6 +345,13 @@ main {
   text-align: center;
   color: rgba(255, 255, 255, 0.7);
 }
+@media screen and (max-width: 768px) {
+  .terms {
+    margin-top: 6.94vw;
+    font-size: 2.5vw;
+    margin-bottom: 12.22vw;
+  }
+}
 
 .button_animation {
   margin-top: 4.17vw;
@@ -357,6 +378,11 @@ main {
   flex-wrap: wrap;
   margin-bottom: 15px;
 }
+@media screen and (max-width: 768px) {
+  .footer {
+    display: none;
+  }
+}
 
 .icons__block {
   display: flex;
@@ -365,7 +391,7 @@ main {
 }
 
 .icon {
-  margin-left: 25px;
+  margin-left: 1.3vw;
 }
 
 .icon-1 {
@@ -383,33 +409,75 @@ main {
 .icon-4 {
   width: 2.4vw;
 }
+@media screen and (max-width: 768px) {
+  .icon-4 {
+    width: 12.78vw;
+  }
+}
 
 .icon-5 {
   width: 3.23vw;
+}
+@media screen and (max-width: 768px) {
+  .icon-5 {
+    width: 17.22vw;
+  }
 }
 
 .icon-6 {
   width: 3.23vw;
 }
+@media screen and (max-width: 768px) {
+  .icon-6 {
+    width: 17.22vw;
+  }
+}
 
 .icon-7 {
   width: 3.23vw;
+}
+@media screen and (max-width: 768px) {
+  .icon-7 {
+    width: 17.22vw;
+  }
 }
 
 .icon-8 {
   width: 3.18vw;
 }
+@media screen and (max-width: 768px) {
+  .icon-8 {
+    width: 18.89vw;
+  }
+}
 
 .icon-9 {
   width: 3.18vw;
+}
+@media screen and (max-width: 768px) {
+  .icon-9 {
+    width: 18.89vw;
+    margin-left: 6.94vw;
+  }
 }
 
 .icon-10 {
   width: 1.82vw;
 }
+@media screen and (max-width: 768px) {
+  .icon-10 {
+    width: 12.22vw;
+  }
+}
 
 .icon-11 {
   width: 1.35vw;
+}
+@media screen and (max-width: 768px) {
+  .icon-11 {
+    width: 9.17vw;
+    margin-left: 6.94vw;
+  }
 }
 
 .icon-12 {
@@ -426,6 +494,154 @@ main {
 
 .icon-15 {
   width: 0.94vw;
+}
+
+.footer_mobile {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .footer_mobile {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.menu {
+  margin: 5.56vw 0px 4.17vw 0px;
+  padding: 0;
+  width: 70%;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menu_item {
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.58vw;
+  line-height: 4.17vw;
+  margin: 0;
+  color: #ffffff;
+}
+
+.social_list {
+  margin-bottom: 4.17vw;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.icon_footer {
+  width: 5vw;
+}
+
+.social_list_2 {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 4.17vw;
+}
+
+.icon_footer_2 {
+  width: 9.17vw;
+}
+
+.icon_footer_3 {
+  margin-left: 4.17vw;
+  width: 13.89vw;
+}
+
+.footer_first_part {
+  width: 100%;
+  background: #161616;
+}
+
+.footer_second_part {
+  width: 100%;
+  background: #000;
+}
+
+.payment {
+  text-transform: uppercase;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 3vw;
+  line-height: 5vw;
+  color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  margin-top: 3.89vw;
+}
+
+.payment_list {
+  margin-top: 5.56vw;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.wall {
+  display: block;
+  width: 10%;
+  margin: 5.56vw auto 5.56vw auto;
+}
+
+.payment_list_2 {
+  margin-top: 5.56vw;
+  padding: 0;
+  width: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo_footer {
+  display: block;
+  width: 25%;
+  margin: 11.94vw auto 3.61vw auto;
+}
+
+.about {
+  margin: 0;
+  font-family: "Poppins";
+  font-weight: 500;
+  font-size: 2.78vw;
+  line-height: 4.17vw;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.sitemap {
+  margin-top: 6.11vw;
+  margin-bottom: 15.78vw;
+  display: flex;
+  justify-content: center;
+  font-family: "Poppins";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 2.78vw;
+  line-height: 4.17vw;
+  text-align: center;
+  color: #ffffff;
+}
+
+.sitemap_description {
+  margin-left: 6.94vw;
 }
 
 .item_right {
