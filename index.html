@@ -14,6 +14,12 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;900&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+
     <link rel="stylesheet" href="./css/main.css" />
     <title>Vodds</title>
   </head>
@@ -39,6 +45,32 @@
                 UP TO <span class="description--accent">€/£/$ 100</span> OR
                 <span class="description--accent">¥ 500</span>
               </p>
+
+              <div class="single-item">
+                <div>
+                  <p class="steps__item__mobile one">
+                    Register with <br /><span class="steps__item--accent">WIN100X</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="steps__item__mobile two">
+                    Make a<br />
+                    <span class="steps__item--accent">deposit</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="steps__item__mobile three">
+                    Bet on any<br /><span class="steps__item--accent"> match</span>
+                  </p>
+                </div>
+                <div>
+                  <p class="steps__item__mobile four">
+                    Get your<br />
+                    <span class="steps__item--accent">bonus</span>
+                  </p>
+                </div>
+              </div>
+
               <ul class="steps">
                 <li class="steps__item">
                   Register with <br /><span class="steps__item--accent">WIN100X</span>
@@ -72,9 +104,8 @@
                   </table>
                 </div>
                 <button type="button" class="button">
-                  <p class="button__text">GET STARTED</p>
+                  <span><p class="button_text">GET STARTED</p></span>
                 </button>
-
                 <div class="item_right" id="bl">
                   <table>
                     <tr>
@@ -94,15 +125,6 @@
               <div class="terms_container">
                 <p class="terms">*Terms & Conditions</p>
               </div>
-              <!-- <div class="gallery">
-                <button class="decrement"><</button>
-                <div id="text_slide1">Содержимое текстового блока №1</div>
-                <div id="text_slide2">Содержимое текстового блока №2</div>
-                <div id="text_slide3">Содержимое текстового блока №3</div>
-                <div id="text_slide4">Содержимое текстового блока №4</div>
-                <div id="text_slide5">Содержимое текстового блока №5</div>
-                <button class="increment">></button>
-              </div> -->
             </div>
           </div>
         </section>
@@ -201,57 +223,17 @@
       </footer>
     </div>
   </body>
-  <script>
-    const leftTable = document.querySelector('.item_left');
-    const btn = document.querySelector('.button');
-    const container = document.querySelector('.button_animation');
-    console.log(leftTable);
-
-    btn.addEventListener('mouseover', function (event) {
-      leftTable.style.opacity = 0;
-    });
-
-    btn.addEventListener('mouseout', function (event) {
-      leftTable.style.opacity = 100;
-    });
-  </script>
   <script
-    type="text/javascript"
-    src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"
+    src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+    crossorigin="anonymous"
   ></script>
-  <!-- <script type="text/javascript">
-    var text_slide_cur = 0;
-
-    const increment = document.querySelector('.increment');
-    const decrement = document.querySelector('.decrement');
-
-    increment.addEventListener('click', function showtext_slide() {
-      hidetext_slide();
-      $('#text_slide' + (text_slide_cur + 1))
-        .css({ opacity: 0 })
-        .animate({ opacity: 1.0, left: '50px' }, 500);
-    });
-    function showtext_slide() {
-      $('#text_slide' + (text_slide_cur + 1))
-        .css({ opacity: 0 })
-        .animate({ opacity: 1.0, left: '50px' }, 500);
-    }
-
-    decrement.addEventListener('click', function showtext_slide() {
-      hidetext_slide();
-      $('#text_slide' + (text_slide_cur - 1))
-        .css({ opacity: 0 })
-        .animate({ opacity: 1.0, left: '50px' }, 500);
-    });
-
-    function hidetext_slide() {
-      $('#text_slide' + (text_slide_cur + 1))
-        .css({ opacity: 1 })
-        .animate({ opacity: 0, left: '-50px' }, 500, function () {});
-      text_slide_cur = (text_slide_cur + 1) % 5;
-    }
-    $(document).ready(function () {
-      showtext_slide();
-    });
-  </script> -->
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script type="text/javascript" src="./js/slider.js"></script>
+  <script src="./js/buttonAnimation.js"></script>
 </html>
