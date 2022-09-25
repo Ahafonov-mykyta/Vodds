@@ -176,7 +176,6 @@ main {
   @media screen and (max-width: 768px) {
     padding: 0 0;
     font-size: 19.44vw;
-    left: 6.11vw;
   }
 }
 
@@ -196,9 +195,10 @@ main {
   align-items: center;
   text-align: center;
   @media screen and (max-width: 768px) {
+    width: 110%;
     padding: 0 0;
     font-size: 19.44vw;
-    left: 6.11vw;
+    left: -4.89vw;
   }
 }
 
