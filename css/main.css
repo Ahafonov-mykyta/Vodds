@@ -101,13 +101,13 @@ main {
   -webkit-background-clip: text;
           background-clip: text;
   padding: 0 1.04vw;
-  white-space: break-spaces;
 }
 @media screen and (max-width: 768px) {
   .title {
     width: 100%;
     padding: 1.04vw;
-    font-size: 8.33vw;
+    font-size: 7.9vw;
+    z-index: 5;
   }
 }
 
@@ -125,13 +125,15 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
-  white-space: break-spaces;
 }
 @media screen and (max-width: 768px) {
   .title__stroke {
+    position: absolute;
     width: 100%;
+    top: -0.28vw;
     padding: 1.04vw;
-    font-size: 8.33vw;
+    font-size: 7.9vw;
+    z-index: 0;
   }
 }
 
@@ -158,12 +160,6 @@ main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-@media screen and (max-width: 768px) {
-  .shadow__title__bonus {
-    width: 100%;
-  }
-}
-
 .title__bonus {
   margin: 0;
   padding: 0 20px;

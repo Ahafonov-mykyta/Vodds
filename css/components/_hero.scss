@@ -96,12 +96,12 @@ main {
   color: transparent;
   background-clip: text;
   padding: 0 1.04vw;
-  white-space: break-spaces;
 
   @media screen and (max-width: 768px) {
     width: 100%;
     padding: 1.04vw;
-    font-size: 8.33vw;
+    font-size: 7.9vw;
+    z-index: 5;
   }
 }
 
@@ -119,11 +119,14 @@ main {
   -webkit-background-clip: text;
   color: transparent;
   background-clip: text;
-  white-space: break-spaces;
+
   @media screen and (max-width: 768px) {
+    position: absolute;
     width: 100%;
+    top: -0.28vw;
     padding: 1.04vw;
-    font-size: 8.33vw;
+    font-size: 7.9vw;
+    z-index: 0;
   }
 }
 
@@ -155,7 +158,6 @@ main {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   @media screen and (max-width: 768px) {
-    width: 100%;
   }
 }
 
@@ -179,7 +181,6 @@ main {
 
 .title__bonus__stroke {
   margin: 0;
-
   padding: 0 20px;
   top: -1px;
   line-height: 1.14;
