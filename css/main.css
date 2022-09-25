@@ -84,7 +84,7 @@ main {
   .slots {
     height: 100vw;
     top: 18%;
-    left: -10%;
+    left: -12%;
     z-index: 0;
   }
 }
@@ -203,8 +203,9 @@ main {
 }
 @media screen and (max-width: 768px) {
   .title__bonus__stroke {
-    display: none;
-    display: none;
+    padding: 0 0;
+    font-size: 19.44vw;
+    left: 6.11vw;
   }
 }
 
@@ -338,7 +339,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .button_animation {
-    margin-right: -6.1vw;
+    margin-left: -3.83vw;
   }
 }
 
@@ -930,12 +931,11 @@ main {
 @media screen and (max-width: 768px) {
   .item_right {
     height: 14.72vw;
-    width: 22.22vw;
   }
 }
 
 table {
-  margin: 0;
+  margin: 0px;
   padding: 0;
   height: 3.1vw;
 }
@@ -980,6 +980,11 @@ table {
 .el_tu:nth-child(4) {
   -webkit-animation-delay: 0.6s;
           animation-delay: 0.6s;
+}
+@media screen and (max-width: 768px) {
+  .el_tu:nth-child(4) {
+    display: none;
+  }
 }
 
 .el_tu:nth-child(5) {
@@ -1110,7 +1115,7 @@ table {
 @media screen and (max-width: 768px) {
   .item_left {
     height: 14.72vw;
-    width: 21.22vw;
+    width: 18.22vw;
   }
 }
 

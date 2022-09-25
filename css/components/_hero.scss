@@ -80,7 +80,7 @@ main {
   @media screen and (max-width: 768px) {
     height: 100vw;
     top: 18%;
-    left: -10%;
+    left: -12%;
     z-index: 0;
   }
 }
@@ -196,11 +196,9 @@ main {
   align-items: center;
   text-align: center;
   @media screen and (max-width: 768px) {
-    display: none;
-    display: none;
-    // padding: 0 0;
-    // font-size: 19.44vw;
-    // left: 0.11000000000000032vw;
+    padding: 0 0;
+    font-size: 19.44vw;
+    left: 6.109999999999999vw;
   }
 }
 
@@ -364,7 +362,7 @@ main {
   align-items: center;
 
   @media screen and (max-width: 768px) {
-    margin-right: -6.1vw;
+    margin-left: -3.83vw;
   }
 }
 
