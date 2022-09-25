@@ -173,7 +173,6 @@ main {
 }
 @media screen and (max-width: 768px) {
   .title__bonus {
-    padding: 0 1.04vw;
     font-size: 19.44vw;
   }
 }
@@ -196,7 +195,6 @@ main {
 }
 @media screen and (max-width: 768px) {
   .title__bonus__stroke {
-    padding: 0 1.04vw;
     font-size: 19.44vw;
   }
 }
