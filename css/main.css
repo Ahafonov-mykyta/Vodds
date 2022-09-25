@@ -204,6 +204,7 @@ main {
 @media screen and (max-width: 768px) {
   .title__bonus__stroke {
     display: none;
+    display: none;
   }
 }
 
