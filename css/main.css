@@ -204,8 +204,9 @@ main {
 @media screen and (max-width: 768px) {
   .title__bonus__stroke {
     padding: 0 0;
+    width: 100%;
     font-size: 19.44vw;
-    left: 6.11vw;
+    left: 0.11vw;
   }
 }
 
