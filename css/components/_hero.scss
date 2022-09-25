@@ -196,6 +196,7 @@ main {
   align-items: center;
   text-align: center;
   @media screen and (max-width: 768px) {
+    display: none;
     width: 100%;
     padding: 0 0;
     font-size: 19.44vw;
