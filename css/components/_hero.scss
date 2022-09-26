@@ -70,14 +70,6 @@ main {
 
 .slots {
   display: none;
-  position: absolute;
-  top: -17%;
-  right: 48%;
-  box-sizing: border-box;
-  margin-bottom: -10.42vw;
-  height: 140%;
-  z-index: -1;
-  animation: slots 0.5s linear;
 
   @media screen and (max-width: 768px) {
     display: block;
