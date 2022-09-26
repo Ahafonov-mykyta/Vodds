@@ -11,13 +11,13 @@
   top: -17%;
   left: -13%;
   z-index: -1;
-  animation: front_coins 0.5s linear forwards;
+  animation: front_coins 0.3s linear forwards;
   overflow: hidden;
 }
 
 @keyframes front_coins {
   0% {
-    scale: 0.5;
+    scale: 0.3;
   }
   100% {
     scale: 1.1;
@@ -30,11 +30,11 @@
   top: -6%;
   left: 2%;
   z-index: -1;
-  animation: back_coins 0.5s linear forwards;
+  animation: back_coins 0.3s linear forwards;
 }
 @keyframes back_coins {
   0% {
-    scale: 0.5;
+    scale: 0.3;
   }
   100% {
     scale: 0.9;
@@ -48,7 +48,7 @@
   width: 16.41vw;
   z-index: 1;
 
-  animation: roulette 0.5s linear forwards;
+  animation: roulette 0.3s linear forwards;
 }
 @keyframes roulette {
   0% {
@@ -66,7 +66,7 @@
   width: 48.45vw;
   z-index: -2;
 
-  animation: light 0.5s linearforwards;
+  animation: light 0.3s linearforwards;
 }
 @keyframes light {
   0% {
@@ -81,12 +81,12 @@
   top: 67%;
   left: 20%;
   width: 4.17vw;
-  animation: cube1 0.5s linear forwards;
+  animation: cube1 0.3s linear forwards;
 }
 @keyframes cube1 {
   0% {
     transform: translate(2.6vw, -3.6vw);
-    scale: 1;
+    scale: 0.5;
   }
   100% {
     scale: 1.7;
@@ -99,13 +99,13 @@
   left: 38%;
   width: 1.77vw;
   z-index: 2;
-  animation: cube2 0.5s linear forwards;
+  animation: cube2 0.3s linear forwards;
 }
 
 @keyframes cube2 {
   0% {
     transform: translate(20px, -20px);
-    scale: 1;
+    scale: 0.5;
   }
   100% {
     scale: 2.3;
@@ -118,13 +118,13 @@
   top: 5%;
   left: 67%;
   z-index: -1;
-  animation: soccer 0.5s linear forwards;
+  animation: soccer 0.3s linear forwards;
 }
 
 @keyframes soccer {
   0% {
     transform: translate(-1.78vw, 4.13vw);
-    scale: 1;
+    scale: 0.5;
   }
   100% {
     scale: 1.7;
@@ -136,13 +136,13 @@
   top: 36%;
   left: 74%;
   z-index: -2;
-  animation: basket 0.5s linear forwards;
+  animation: basket 0.3s linear forwards;
 }
 
 @keyframes basket {
   0% {
     transform: translate(-5.86vw, 1.04vw);
-    scale: 1;
+    scale: 0.5;
   }
   100% {
     scale: 1.4;
@@ -155,13 +155,13 @@
   top: 68%;
   left: 66%;
   z-index: -1;
-  animation: amer_foot 0.5s linear forwards;
+  animation: amer_foot 0.3s linear forwards;
 }
 
 @keyframes amer_foot {
   0% {
     transform: translate(-3.56vw, -2.56vw);
-    scale: 1;
+    scale: 0.5;
   }
   100% {
     scale: 1.5;
