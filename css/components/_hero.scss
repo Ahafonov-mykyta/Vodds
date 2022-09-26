@@ -434,6 +434,7 @@ main {
   height: 3.33vw;
   color: #79206b;
   cursor: pointer;
+  transition: opacity 2250ms cubic-bezier(0.4, 0, 0.2, 1);
   &:hover + .item_right {
     opacity: 0;
   }
