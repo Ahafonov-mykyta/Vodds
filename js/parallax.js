@@ -1,6 +1,5 @@
 let light = document.querySelector('.light');
-let table1 = document.querySelector('.button_animation');
-
+let lines = document.querySelector('body');
 let btnn = document.querySelector('.button');
 let roulette = document.querySelector('.roulette');
 let front_coins = document.querySelector('.front_coins');
@@ -15,8 +14,10 @@ window.addEventListener('mousemove', function (e) {
   let x = e.clientX / window.innerWidth;
   let y = e.clientY / window.innerHeight;
 
-  table1.style.transform = 'translate(-' + x * 5 + 'px, -' + y * 5 + 'px) ';
+  fractional = Math.floor((x % 1) * Math.pow(10, 5));
+  console.log(fractional);
 
+  lines.style.backgroundPosition = 46 - x * 0.5 + 'vw -' + y * 0.5 + 'vw ';
   light.style.transform = 'translate(-' + x * 5 + 'px, -' + y * 5 + 'px) ';
   roulette.style.transform = 'translate(-' + x * 4 + 'px, -' + y * 4 + 'px) ';
   front_coins.style.transform = 'translate(-' + x * 15 + 'px, -' + y * 15 + 'px) ';
