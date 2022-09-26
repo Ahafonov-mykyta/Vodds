@@ -14,9 +14,6 @@ window.addEventListener('mousemove', function (e) {
   let x = e.clientX / window.innerWidth;
   let y = e.clientY / window.innerHeight;
 
-  fractional = Math.floor((x % 1) * Math.pow(10, 5));
-  console.log(fractional);
-
   lines.style.backgroundPosition = 46 - x * 0.5 + 'vw -' + y * 0.5 + 'vw ';
   light.style.transform = 'translate(-' + x * 5 + 'px, -' + y * 5 + 'px) ';
   roulette.style.transform = 'translate(-' + x * 4 + 'px, -' + y * 4 + 'px) ';
