@@ -1,4 +1,7 @@
 let light = document.querySelector('.light');
+let table1 = document.querySelector('.button_animation');
+
+let btnn = document.querySelector('.button');
 let roulette = document.querySelector('.roulette');
 let front_coins = document.querySelector('.front_coins');
 let cube1 = document.querySelector('.cube1');
@@ -11,6 +14,9 @@ let back_coins = document.querySelector('.back_coins');
 window.addEventListener('mousemove', function (e) {
   let x = e.clientX / window.innerWidth;
   let y = e.clientY / window.innerHeight;
+
+  table1.style.transform = 'translate(-' + x * 5 + 'px, -' + y * 5 + 'px) ';
+
   light.style.transform = 'translate(-' + x * 5 + 'px, -' + y * 5 + 'px) ';
   roulette.style.transform = 'translate(-' + x * 4 + 'px, -' + y * 4 + 'px) ';
   front_coins.style.transform = 'translate(-' + x * 15 + 'px, -' + y * 15 + 'px) ';
