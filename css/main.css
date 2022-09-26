@@ -192,9 +192,7 @@ main {
 }
 @media screen and (max-width: 768px) {
   .title__bonus {
-    width: 100%;
-    padding: 0 0;
-    font-size: 18.44vw;
+    display: none;
   }
 }
 
@@ -216,10 +214,18 @@ main {
 }
 @media screen and (max-width: 768px) {
   .title__bonus__stroke {
-    padding: 0 0;
-    width: 95.83vw;
-    font-size: 18.44vw;
-    left: 0.11vw;
+    display: none;
+  }
+}
+
+.title_bonus_svg {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .title_bonus_svg {
+    margin-top: -5.04vw;
+    display: block;
+    width: 100%;
   }
 }
 
