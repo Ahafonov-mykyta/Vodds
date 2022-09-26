@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="./images/Logo VOdds.png" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css"
@@ -31,7 +32,24 @@
       <main>
         <section class="container">
           <div class="hero">
-            <img class="slots" src="./images/Frame 131.png" alt="Gaming slots" />
+            <img class="slots" src="./images/Frame 131.png" />
+            <div class="slots_animation">
+              <img class="light" src="./images/slots_animation/light_effect.png" alt="VOdds logo" />
+              <img class="roulette" src="./images/slots_animation/roulette+.png" alt="VOdds logo" />
+              <img class="front_coins" src="./images/slots_animation/coins_front2.png" />
+
+              <img class="cube1" src="./images/slots_animation/сube1.svg" alt="VOdds logo" />
+              <img class="cube2" src="./images/slots_animation/cube2.svg" alt="VOdds logo" />
+              <img class="soccer" src="./images/slots_animation/soccer.svg" alt="VOdds logo" />
+              <img class="basket" src="./images/slots_animation/basket.png" alt="VOdds logo" />
+              <img
+                class="amer_foot"
+                src="./images/slots_animation/amer footb.png"
+                alt="VOdds logo"
+              />
+              <img class="back_coins" src="./images/slots_animation/coins_back.png" />
+            </div>
+
             <div class="hero__info">
               <div class="shadow__title__new">
                 <p class="title">NEW CUSTOMER</p>
@@ -103,7 +121,11 @@
                     </tr>
                   </table>
                 </div>
-                <button type="button" class="button">
+                <button
+                  type="button"
+                  class="button"
+                  onclick="window.location.href =  'https://vodds.net/register?promo=fairx100&services=sportsbooksaccounts';"
+                >
                   <span><p class="button_text">GET STARTED</p></span>
                 </button>
                 <div class="item_right" id="bl">
@@ -148,10 +170,22 @@
           <img class="icon icon-11" src="./images/footer/footer-11.svg" alt="" />
         </div>
         <div class="icons__block">
-          <img class="icon icon-12" src="./images/footer/footer-12.svg" alt="" />
-          <img class="icon icon-13" src="./images/footer/footer-13.svg" alt="" />
-          <img class="icon icon-14" src="./images/footer/footer-14.svg" alt="" />
-          <img class="icon icon-15" src="./images/footer/footer-15.svg" alt="" />
+          <a href="https://www.facebook.com/voddsofficial" target="blank">
+            <svg class="icon icon-12" width="0.78vw" height="0.78vw">
+              <use href="./images/footer/spite.svg#footer-12"></use></svg
+          ></a>
+          <a href="https://www.instagram.com/vodds_official/" target="blank">
+            <svg class="icon icon-12" width="0.78vw" height="0.78vw">
+              <use href="./images/footer/spite.svg#footer-13"></use></svg
+          ></a>
+          <a href="https://t.me/s/voddsofficial" target="blank">
+            <svg class="icon icon-12" width="0.78vw" height="0.78vw">
+              <use href="./images/footer/spite.svg#tg"></use></svg
+          ></a>
+          <a href="https://twitter.com/vodds_official" target="blank">
+            <svg class="icon icon-12" width="0.78vw" height="0.78vw">
+              <use href="./images/footer/spite.svg#footer-15"></use></svg
+          ></a>
         </div>
       </footer>
       <footer class="footer_mobile">
@@ -159,29 +193,53 @@
           <div class="container">
             <ul class="menu">
               <li>
-                <p class="menu_item">Promotions</p>
+                <a href="https://vodds.net/promotions/" class="menu_item">Promotions</a>
               </li>
               <li>
-                <p class="menu_item">FAQ</p>
+                <a href="https://vodds.net/frequently-asked-questions/" class="menu_item">FAQ</a>
               </li>
               <li>
-                <p class="menu_item">Affiliate</p>
+                <a href="https://vodds.net/affiliate-program/" class="menu_item">Affiliate</a>
               </li>
               <li>
-                <p class="menu_item">Blog</p>
+                <a href="https://vodds.net/blog/" class="menu_item">Blog</a>
               </li>
               <li>
-                <p class="menu_item">Contact</p>
+                <a href="https://vodds.net/contact/" class="menu_item">Contact</a>
               </li>
             </ul>
 
             <ul class="social_list">
-              <li><img class="icon_footer" src="./images/footer/footer-12.svg" alt="" /></li>
-              <li><img class="icon_footer" src="./images/footer/vk.svg" alt="" /></li>
-              <li><img class="icon_footer" src="./images/footer/footer-13.svg" alt="" /></li>
-              <li><img class="icon_footer" src="./images/footer/tg.svg" alt="" /></li>
-              <li><img class="icon_footer" src="./images/footer/footer-15.svg" alt="" /></li>
-              <li><img class="icon_footer" src="./images/footer/yout.svg" alt="" /></li>
+              <li>
+                <a href="https://www.facebook.com/voddsofficial" target="blank"
+                  ><img class="icon_footer" src="./images/footer/footer-12.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://vk.com/voddsofficial" target="blank"
+                  ><img class="icon_footer" src="./images/footer/vk.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/vodds_official/" target="blank"
+                  ><img class="icon_footer" src="./images/footer/footer-13.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://t.me/s/voddsofficial" target="blank"
+                  ><img class="icon_footer" src="./images/footer/tg.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://twitter.com/vodds_official" target="blank"
+                  ><img class="icon_footer" src="./images/footer/footer-15.svg" alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/channel/UC54qIGQ7LH9waKGe2FLBNPw" target="blank"
+                  ><img class="icon_footer" src="./images/footer/yout.svg" alt=""
+                /></a>
+              </li>
             </ul>
             <ul class="social_list_2">
               <li><img class="icon_footer_2" src="./images/footer/footer-1.svg" alt="" /></li>
@@ -208,7 +266,9 @@
               <img class="icon-10" src="./images/footer/footer-10.svg" alt="" />
               <img class="icon-11" src="./images/footer/footer-11.svg" alt="" />
             </div>
-            <img class="logo_footer" src="./images/footer/Logo_VOdds_footer.svg" alt="" />
+            <a href="https://vodds.net/"
+              ><img class="logo_footer" src="./images/footer/Logo_VOdds_footer.svg" alt=""
+            /></a>
             <p class="about">
               VOdds is a brand managed by Ole Group International B.V., a Curacao registered company
               whose registered address is Fransche Bleomweg 4, Willemstad, Curacao with License No.
@@ -236,4 +296,5 @@
   ></script>
   <script type="text/javascript" src="./js/slider.js"></script>
   <script src="./js/buttonAnimation.js"></script>
+  <script src="./js/parallax.js"></script>
 </html>

@@ -69,6 +69,7 @@ main {
 }
 
 .slots {
+  display: none;
   position: absolute;
   top: -17%;
   right: 48%;
@@ -76,12 +77,23 @@ main {
   margin-bottom: -10.42vw;
   height: 140%;
   z-index: -1;
+  animation: slots 0.5s linear;
 
   @media screen and (max-width: 768px) {
+    display: block;
     height: 100vw;
     top: 18%;
     left: -12%;
     z-index: 0;
+  }
+}
+
+@keyframes slots {
+  0% {
+    scale: 0.5;
+  }
+  100% {
+    scale: 1;
   }
 }
 
@@ -298,43 +310,6 @@ main {
   font-weight: 700;
 }
 
-// .button {
-//   margin: 4px 1.1vw 0vw -0.8vw;
-//   background: radial-gradient(43.88% 50% at 56.12% 50%, #f8dd77 0%, rgba(248, 221, 119, 0) 100%),
-//     #ffdf65;
-//   border: 0.05vw solid #fdeb87;
-//   box-shadow: 0px 0px 40px rgba(255, 55, 220, 0.5), 0px 0px 70px rgba(255, 55, 220, 0.2),
-//     0px 2px 50px #ff37dc, inset 0px -4px 2px #dec45d, inset 0px 1px 0px #c6a013;
-//   border-radius: 0.05vw;
-//   width: 12.76vw;
-//   font-family: 'Poppins';
-//   font-style: normal;
-//   font-weight: 700;
-//   font-size: 1.15vw;
-//   line-height: 1.72vw;
-//   transform: skew(-30deg);
-//   text-transform: uppercase;
-//   height: 3.33vw;
-//   color: #79206b;
-//   transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
-
-//   &:hover {
-//     transform: skew(-30deg) translateX(1.3vw);
-//     transition: cubic-bezier(0.4, 0, 0.2, 1) 400ms;
-//   }
-
-//   &:hover + .item_right {
-//     opacity: 0;
-//   }
-
-//   @media screen and (max-width: 768px) {
-//     width: 56.67vw;
-//     margin-right: 3.4vw;
-//     height: 14.72vw;
-//     font-size: 5vw;
-//   }
-// }
-
 .terms {
   margin-top: 1.3vw;
   font-family: 'Poppins';
@@ -453,7 +428,7 @@ main {
   padding: 0;
   height: 3.33vw;
   color: #79206b;
-
+  cursor: pointer;
   &:hover + .item_right {
     opacity: 0;
   }
